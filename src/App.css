@@ -17,6 +17,7 @@ h1 {
   color: #fff;
   text-align: center;
   font-weight: 800;
+  font-size: 16px;
 }
 
 span {
@@ -27,7 +28,7 @@ span {
   font-weight: 800;
 }
 
-.button-style {
+/* .button-style {
   padding: 10px;
   background-color: #4c7faf;
   color: white;
@@ -41,7 +42,7 @@ span {
   font-size: 25px;
   border-radius: 50px;
   font-weight: 800;
-}
+} */
 
 .principal {
   display: flex;
@@ -53,10 +54,9 @@ span {
   font-weight: 800;
 }
 
-
 .button-style-national {
   padding: 10px;
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
   border: none;
   border-radius: 4px;
@@ -64,10 +64,115 @@ span {
 }
 
 .button-style-national-no {
-  background-color: #FF5733;
+  background-color: #ff5733;
   padding: 10px;
   color: white;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+}
+
+/* btn */
+
+.simple-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease,
+    box-shadow 0.3s ease;
+  background-color: #4caf50; /* Verde vibrante */
+  color: #fff; /* Texto branco para contraste */
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  margin: 10px;
+}
+
+.simple-button:hover,
+.simple-button:focus {
+  transform: scale(1.05); /* Efeito de escala sutil ao ser-hovered ou focado */
+  background-color: #45a049; /* Tonalidade mais escura de verde */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra mais proeminente ao ser-hovered ou focado */
+}
+
+.loading {
+  height: 50px;
+}
+
+/* footer  */
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.footer span {
+  color: #333;
+  font-size: 18px;
+}
+
+.author-link {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.author-link:hover {
+  text-decoration: none;
+}
+
+.club-list-container {
+  height: 305px;
+  overflow-y: auto; /* Adiciona uma barra de rolagem vertical, se necessário */
+  margin-bottom: 5px;
+  overflow: hidden;
+}
+
+.checkBox-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 120px;
+}
+
+.checkBox-container-div {
+  display: flex;
+  padding-top: 10px;
+}
+
+/* Estilo do checkbox */
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+input[type="checkbox"] {
+  margin-right: 8px; /* Espaçamento entre o checkbox e o texto */
+  cursor: pointer;
+  width: 30px;
+}
+
+/* Estilo do checkbox quando está marcado */
+input[type="checkbox"]:checked + .checkbox-label::after {
+  content: "\2713"; /* Símbolo de marca de seleção Unicode */
+  font-size: 30px;
+  color: #3498db; /* Cor da marca de seleção quando marcado */
+  margin-left: 5px;
+}
+
+/* Estilo do marcador do checkbox quando não está marcado */
+input[type="checkbox"]:not(:checked) + .checkbox-label::after {
+  content: "✕"; /* Símbolo de "X" Unicode */
+  font-size: 20px;
+  color: #e74c3c; /* Cor vermelha para o "X" */
+  margin-left: 5px;
 }

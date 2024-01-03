@@ -20,7 +20,7 @@ const ClubList = ({ clubs }) => {
             textAlign: "center",
             padding: "16px",
             background: "#696969",
-            width: "160px"
+            width: "150px"
           }}
         >
           <img
